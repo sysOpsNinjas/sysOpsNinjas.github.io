@@ -1,0 +1,26 @@
+User-agent: *
+Allow: /
+
+# Block access to specific directories (if any)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /.git/
+
+# Allow all crawlers access to CSS and JS files
+Allow: /assets/
+Allow: /css/
+Allow: /js/
+Allow: /images/
+
+# Specify the sitemap location
+Sitemap: https://sysopsninjas.github.io/sitemap.xml
+
+# Common crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
